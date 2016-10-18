@@ -5,7 +5,6 @@ You can run it by typing the below command:
 
 ```
 ./activator run
-
 ```
 open your browser,type:
 
