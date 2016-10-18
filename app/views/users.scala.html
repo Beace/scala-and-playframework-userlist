@@ -1,0 +1,35 @@
+@(messages: String, users: Seq[Userinfo])
+@layout("Users List") {
+
+    <div>
+        <form action="@routes.Application.search()" method="POST">
+            <input type="search" class="form-control pull-left search padding" name="username" placeholder="查询">
+        </form>
+        <a href="/users/add" class="btn btn-primary pull-left padding">添加</a>
+    </div>
+    <table id="table" class="table table-bordered table-hover table-striped container">
+        <tr class="info">
+            <th>#</th>
+            <th>用户名</th>
+            <th>描述</th>
+            <th>密码</th>
+            <th>操作</th>
+        </tr>
+
+        @for(user <- users) {
+            <tr>
+                <td>@user.id</td>
+                <td>@user.username</td>
+                <td>@user.description</td>
+                <td>@user.password</td>
+                <td><a href="@routes.UserController.detail(user.id)">详情</a>
+                    <span style="margin: 0 10px;">|</span>
+                    <a href="@routes.UserController.edit(user.id)">修改</a>
+                    <span style="margin: 0 10px;">|</span>
+                    <a href="@routes.UserController.delete(user.id)">删除</a></td>
+            </tr>
+        }
+
+    </table>
+
+}

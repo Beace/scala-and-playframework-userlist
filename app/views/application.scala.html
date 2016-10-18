@@ -1,0 +1,38 @@
+@(users: List[Userinfo])
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>user list</title>
+  <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/bootstrap.css")">
+  <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/shop.css")">
+</head>
+<body>
+  <div class="container">
+    <h1 class="h1 h1-margin">User List</h1>
+    <hr/>
+    <input type="text" class="form-control" placeholder="查询">
+    <table class="table table-bordered table-hover table-striped container">
+      <tr class="info">
+        <th>#</th>
+        <th>用户名</th>
+        <th>描述</th>
+        <th>密码</th>
+        <th>操作</th>
+      </tr>
+      @for(user <- users) {
+        <tr>
+          <td>@user.id</td>
+          <td>@user.username</td>
+          <td>@user.description</td>
+          <td>@user.password</td>
+          <td><a href="javascript:;">详情</a><span style="margin:0 10px;">|</span><a href="javascript:;">修改</a><span style="margin:0 10px;">|</span><a href="javascript:;">删除</a></td>
+        </tr>
+      }
+    </table>
+  </div>
+  @* @users*@
+
+  <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")"></script>
+</body>
+</html>

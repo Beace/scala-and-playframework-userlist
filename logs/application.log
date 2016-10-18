@@ -1,0 +1,6 @@
+2016-10-18 14:54:02,739 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2016-10-18 14:54:02,785 [INFO] from com.zaxxer.hikari.HikariDataSource in ForkJoinPool-1-worker-1 - HikariPool-1 - Started.
+2016-10-18 14:54:03,702 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost/play
+2016-10-18 14:54:04,017 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2016-10-18T06:54:04.013Z.
+2016-10-18 14:54:04,490 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2016-10-18 14:54:05,193 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)

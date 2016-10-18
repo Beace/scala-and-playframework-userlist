@@ -1,0 +1,27 @@
+@import play.api.libs.json.JsValue
+@(messages: String,data:Seq[Userinfo])
+@layout("Users Details") {
+  @for(d <- data){
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>@d.username 的信息</h4>
+            </div>
+            <div class="panel-body">
+                 <dl class="dl-horizontal">
+                     <dt>User name</dt>
+                     <dd>@d.username</dd>
+                     <dt>Description</dt>
+                     <dd>@d.description</dd>
+                     <dt>Password</dt>
+                     <dd>@d.password</dd>
+                 </dl>
+            </div>
+            <div class="panel-footer">
+                暂无
+            </div>
+        </div>
+        <a class="btn btn-info" href="@routes.UserController.list()">Return</a>
+    </div>
+  }
+}

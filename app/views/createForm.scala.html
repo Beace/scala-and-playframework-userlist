@@ -1,0 +1,8 @@
+@(form: Form[CreateItem])(implicit messages: Messages)
+@layout("Add a item") {
+    @helper.form(routes.ItemsController.create()) {
+        @helper.inputText(form("name"))
+        @helper.inputText(form("price"))
+        <button>save</button>
+    }
+}

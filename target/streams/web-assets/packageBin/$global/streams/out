@@ -1,0 +1,25 @@
+[0m[[0minfo[0m] [0mPackaging /Users/beace/Documents/playframework/my-first-app/target/scala-2.11/my-first-app_2.11-1.0-SNAPSHOT-web-assets.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	public/stylesheets/main.css[0m
+[0m[[0mdebug[0m] [0m	  /Users/beace/Documents/playframework/my-first-app/public/stylesheets/main.css[0m
+[0m[[0mdebug[0m] [0m	public/javascripts/users.js[0m
+[0m[[0mdebug[0m] [0m	  /Users/beace/Documents/playframework/my-first-app/public/javascripts/users.js[0m
+[0m[[0mdebug[0m] [0m	public/javascripts/bootstrap.min.js[0m
+[0m[[0mdebug[0m] [0m	  /Users/beace/Documents/playframework/my-first-app/public/javascripts/bootstrap.min.js[0m
+[0m[[0mdebug[0m] [0m	public/javascripts[0m
+[0m[[0mdebug[0m] [0m	  /Users/beace/Documents/playframework/my-first-app/public/javascripts[0m
+[0m[[0mdebug[0m] [0m	public/javascripts/shop.js[0m
+[0m[[0mdebug[0m] [0m	  /Users/beace/Documents/playframework/my-first-app/public/javascripts/shop.js[0m
+[0m[[0mdebug[0m] [0m	public/stylesheets/shop.css[0m
+[0m[[0mdebug[0m] [0m	  /Users/beace/Documents/playframework/my-first-app/public/stylesheets/shop.css[0m
+[0m[[0mdebug[0m] [0m	public/stylesheets/bootstrap.min.css[0m
+[0m[[0mdebug[0m] [0m	  /Users/beace/Documents/playframework/my-first-app/public/stylesheets/bootstrap.min.css[0m
+[0m[[0mdebug[0m] [0m	public/images[0m
+[0m[[0mdebug[0m] [0m	  /Users/beace/Documents/playframework/my-first-app/public/images[0m
+[0m[[0mdebug[0m] [0m	public/stylesheets[0m
+[0m[[0mdebug[0m] [0m	  /Users/beace/Documents/playframework/my-first-app/public/stylesheets[0m
+[0m[[0mdebug[0m] [0m	public/javascripts/hello.js[0m
+[0m[[0mdebug[0m] [0m	  /Users/beace/Documents/playframework/my-first-app/public/javascripts/hello.js[0m
+[0m[[0mdebug[0m] [0m	public/images/favicon.png[0m
+[0m[[0mdebug[0m] [0m	  /Users/beace/Documents/playframework/my-first-app/public/images/favicon.png[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

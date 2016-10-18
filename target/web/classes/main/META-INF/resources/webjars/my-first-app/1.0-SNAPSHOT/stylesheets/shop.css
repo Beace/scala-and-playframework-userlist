@@ -1,0 +1,14 @@
+body{
+    padding:10px;
+    font-size: 20px;
+    color: #333;
+}
+li button.delete-item {
+    visibility: hidden;
+}
+li:hover button.delete-item {
+    visibility: visible;
+}
+.h1-margin {
+    margin: 20px 0;
+}

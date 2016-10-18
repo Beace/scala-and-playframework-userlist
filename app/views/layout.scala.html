@@ -1,0 +1,17 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")">
+        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/main.css")">
+        <title>@title</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="h1 h1-margin">@title</h1>
+            <hr/>
+            @content
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+2016-10-17 16:37:58,163 [INFO] from application in main - Creating Pool for datasource 'default'
+2016-10-17 16:37:58,214 [INFO] from com.zaxxer.hikari.HikariDataSource in main - HikariPool-1 - Started.
+2016-10-17 16:37:59,157 [INFO] from play.api.db.DefaultDBApi in main - Database [default] connected at jdbc:mysql://localhost/play
+2016-10-17 16:37:59,768 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2016-10-17 16:38:01,329 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 5.2.4.Final
+2016-10-17 16:38:01,446 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - The application secret has not been set, and we are in prod mode. Your application is not secure.
+2016-10-17 16:38:01,447 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - To set the application secret, please read http://playframework.com/documentation/latest/ApplicationSecret
+2016-10-17 16:38:01,453 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - The application secret has not been set, and we are in prod mode. Your application is not secure.
+2016-10-17 16:38:01,453 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - To set the application secret, please read http://playframework.com/documentation/latest/ApplicationSecret
+2016-10-17 16:38:01,454 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - The application secret has not been set, and we are in prod mode. Your application is not secure.
+2016-10-17 16:38:01,454 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - To set the application secret, please read http://playframework.com/documentation/latest/ApplicationSecret
+2016-10-17 16:38:01,461 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - The application secret has not been set, and we are in prod mode. Your application is not secure.
+2016-10-17 16:38:01,463 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - To set the application secret, please read http://playframework.com/documentation/latest/ApplicationSecret
+2016-10-17 16:38:01,475 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - The application secret has not been set, and we are in prod mode. Your application is not secure.
+2016-10-17 16:38:01,475 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - To set the application secret, please read http://playframework.com/documentation/latest/ApplicationSecret
+2016-10-17 16:38:01,476 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - The application secret has not been set, and we are in prod mode. Your application is not secure.
+2016-10-17 16:38:01,476 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - To set the application secret, please read http://playframework.com/documentation/latest/ApplicationSecret
+2016-10-17 16:38:01,479 [INFO] from application in main - ApplicationTimer demo: Starting application at 2016-10-17T08:38:01.477Z.
+2016-10-17 16:38:01,480 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - The application secret has not been set, and we are in prod mode. Your application is not secure.
+2016-10-17 16:38:01,480 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - To set the application secret, please read http://playframework.com/documentation/latest/ApplicationSecret
+2016-10-17 16:38:01,481 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - The application secret has not been set, and we are in prod mode. Your application is not secure.
+2016-10-17 16:38:01,481 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - To set the application secret, please read http://playframework.com/documentation/latest/ApplicationSecret
+2016-10-17 16:38:01,482 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - The application secret has not been set, and we are in prod mode. Your application is not secure.
+2016-10-17 16:38:01,482 [ERROR] from play.api.libs.crypto.CryptoConfigParser in main - To set the application secret, please read http://playframework.com/documentation/latest/ApplicationSecret
