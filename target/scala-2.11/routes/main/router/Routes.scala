@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/beace/Documents/playframework/my-first-app/conf/routes
-// @DATE:Tue Oct 18 11:21:12 CST 2016
+// @DATE:Fri Oct 21 16:25:33 CST 2016
 
 package router
 
@@ -16,53 +16,37 @@ import _root_.controllers.Assets.Asset
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
-  HomeController_1: controllers.HomeController,
-  // @LINE:8
-  CountController_0: controllers.CountController,
-  // @LINE:10
-  AsyncController_3: controllers.AsyncController,
-  // @LINE:12
-  Authentication_4: controllers.Authentication,
-  // @LINE:17
-  ItemsController_2: controllers.ItemsController,
-  // @LINE:26
-  UserController_5: controllers.UserController,
-  // @LINE:36
-  Application_8: controllers.Application,
-  // @LINE:43
-  DBController_6: controllers.DBController,
-  // @LINE:46
-  Assets_7: controllers.Assets,
+  HomeController_0: controllers.HomeController,
+  // @LINE:9
+  UserController_1: controllers.UserController,
+  // @LINE:19
+  Application_4: controllers.Application,
+  // @LINE:28
+  DBController_2: controllers.DBController,
+  // @LINE:31
+  Assets_3: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
-    HomeController_1: controllers.HomeController,
-    // @LINE:8
-    CountController_0: controllers.CountController,
-    // @LINE:10
-    AsyncController_3: controllers.AsyncController,
-    // @LINE:12
-    Authentication_4: controllers.Authentication,
-    // @LINE:17
-    ItemsController_2: controllers.ItemsController,
-    // @LINE:26
-    UserController_5: controllers.UserController,
-    // @LINE:36
-    Application_8: controllers.Application,
-    // @LINE:43
-    DBController_6: controllers.DBController,
-    // @LINE:46
-    Assets_7: controllers.Assets
-  ) = this(errorHandler, HomeController_1, CountController_0, AsyncController_3, Authentication_4, ItemsController_2, UserController_5, Application_8, DBController_6, Assets_7, "/")
+    HomeController_0: controllers.HomeController,
+    // @LINE:9
+    UserController_1: controllers.UserController,
+    // @LINE:19
+    Application_4: controllers.Application,
+    // @LINE:28
+    DBController_2: controllers.DBController,
+    // @LINE:31
+    Assets_3: controllers.Assets
+  ) = this(errorHandler, HomeController_0, UserController_1, Application_4, DBController_2, Assets_3, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, HomeController_1, CountController_0, AsyncController_3, Authentication_4, ItemsController_2, UserController_5, Application_8, DBController_6, Assets_7, prefix)
+    new Routes(errorHandler, HomeController_0, UserController_1, Application_4, DBController_2, Assets_3, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -71,21 +55,9 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """count""", """controllers.CountController.count"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """message""", """controllers.AsyncController.message"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.Authentication.login(returnTo:String)"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """authenticate""", """controllers.Authentication.authenticate(returnTo:String)"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logout""", """controllers.Authentication.logout"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """items""", """controllers.ItemsController.list"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """items""", """controllers.ItemsController.create"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """items/add""", """controllers.ItemsController.createForm"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """items/""" + "$" + """id<[^/]+>""", """controllers.ItemsController.details(id:Long)"""),
-    ("""PUT""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """items/""" + "$" + """id<[^/]+>""", """controllers.ItemsController.update(id:Long)"""),
-    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """items/""" + "$" + """id<[^/]+>""", """controllers.ItemsController.delete(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """users""", """controllers.UserController.list"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """users/add""", """controllers.UserController.add"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """users/detail/""" + "$" + """id<[^/]+>""", """controllers.UserController.detail(id:Int)"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """users/search""", """controllers.UserController.search"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """users/""" + "$" + """id<[^/]+>""", """controllers.UserController.edit(id:Int)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """users/""" + "$" + """id<[^/]+>/delete""", """controllers.UserController.delete(id:Int)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/users""", """controllers.Application.list"""),
@@ -94,6 +66,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/users/search""", """controllers.Application.search"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/users/""" + "$" + """id<[^/]+>""", """controllers.Application.edit(id:Int)"""),
     ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/users/""" + "$" + """id<[^/]+>""", """controllers.Application.delete(id:Int)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/export""", """controllers.Application.export"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/db""", """controllers.DBController.user"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
@@ -108,7 +81,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
-    HomeController_1.index,
+    HomeController_0.index,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
@@ -120,216 +93,29 @@ class Routes(
     )
   )
 
-  // @LINE:8
-  private[this] lazy val controllers_CountController_count1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("count")))
-  )
-  private[this] lazy val controllers_CountController_count1_invoker = createInvoker(
-    CountController_0.count,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.CountController",
-      "count",
-      Nil,
-      "GET",
-      """ An example controller showing how to use dependency injection""",
-      this.prefix + """count"""
-    )
-  )
-
-  // @LINE:10
-  private[this] lazy val controllers_AsyncController_message2_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("message")))
-  )
-  private[this] lazy val controllers_AsyncController_message2_invoker = createInvoker(
-    AsyncController_3.message,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.AsyncController",
-      "message",
-      Nil,
-      "GET",
-      """ An example controller showing how to write asynchronous code""",
-      this.prefix + """message"""
-    )
-  )
-
-  // @LINE:12
-  private[this] lazy val controllers_Authentication_login3_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
-  )
-  private[this] lazy val controllers_Authentication_login3_invoker = createInvoker(
-    Authentication_4.login(fakeValue[String]),
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.Authentication",
-      "login",
-      Seq(classOf[String]),
-      "GET",
-      """""",
-      this.prefix + """login"""
-    )
-  )
-
-  // @LINE:13
-  private[this] lazy val controllers_Authentication_authenticate4_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("authenticate")))
-  )
-  private[this] lazy val controllers_Authentication_authenticate4_invoker = createInvoker(
-    Authentication_4.authenticate(fakeValue[String]),
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.Authentication",
-      "authenticate",
-      Seq(classOf[String]),
-      "POST",
-      """""",
-      this.prefix + """authenticate"""
-    )
-  )
-
-  // @LINE:14
-  private[this] lazy val controllers_Authentication_logout5_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("logout")))
-  )
-  private[this] lazy val controllers_Authentication_logout5_invoker = createInvoker(
-    Authentication_4.logout,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.Authentication",
-      "logout",
-      Nil,
-      "GET",
-      """""",
-      this.prefix + """logout"""
-    )
-  )
-
-  // @LINE:17
-  private[this] lazy val controllers_ItemsController_list6_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("items")))
-  )
-  private[this] lazy val controllers_ItemsController_list6_invoker = createInvoker(
-    ItemsController_2.list,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.ItemsController",
-      "list",
-      Nil,
-      "GET",
-      """""",
-      this.prefix + """items"""
-    )
-  )
-
-  // @LINE:18
-  private[this] lazy val controllers_ItemsController_create7_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("items")))
-  )
-  private[this] lazy val controllers_ItemsController_create7_invoker = createInvoker(
-    ItemsController_2.create,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.ItemsController",
-      "create",
-      Nil,
-      "POST",
-      """""",
-      this.prefix + """items"""
-    )
-  )
-
-  // @LINE:19
-  private[this] lazy val controllers_ItemsController_createForm8_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("items/add")))
-  )
-  private[this] lazy val controllers_ItemsController_createForm8_invoker = createInvoker(
-    ItemsController_2.createForm,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.ItemsController",
-      "createForm",
-      Nil,
-      "GET",
-      """""",
-      this.prefix + """items/add"""
-    )
-  )
-
-  // @LINE:20
-  private[this] lazy val controllers_ItemsController_details9_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("items/"), DynamicPart("id", """[^/]+""",true)))
-  )
-  private[this] lazy val controllers_ItemsController_details9_invoker = createInvoker(
-    ItemsController_2.details(fakeValue[Long]),
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.ItemsController",
-      "details",
-      Seq(classOf[Long]),
-      "GET",
-      """""",
-      this.prefix + """items/""" + "$" + """id<[^/]+>"""
-    )
-  )
-
-  // @LINE:21
-  private[this] lazy val controllers_ItemsController_update10_route = Route("PUT",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("items/"), DynamicPart("id", """[^/]+""",true)))
-  )
-  private[this] lazy val controllers_ItemsController_update10_invoker = createInvoker(
-    ItemsController_2.update(fakeValue[Long]),
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.ItemsController",
-      "update",
-      Seq(classOf[Long]),
-      "PUT",
-      """""",
-      this.prefix + """items/""" + "$" + """id<[^/]+>"""
-    )
-  )
-
-  // @LINE:22
-  private[this] lazy val controllers_ItemsController_delete11_route = Route("DELETE",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("items/"), DynamicPart("id", """[^/]+""",true)))
-  )
-  private[this] lazy val controllers_ItemsController_delete11_invoker = createInvoker(
-    ItemsController_2.delete(fakeValue[Long]),
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.ItemsController",
-      "delete",
-      Seq(classOf[Long]),
-      "DELETE",
-      """""",
-      this.prefix + """items/""" + "$" + """id<[^/]+>"""
-    )
-  )
-
-  // @LINE:26
-  private[this] lazy val controllers_UserController_list12_route = Route("GET",
+  // @LINE:9
+  private[this] lazy val controllers_UserController_list1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("users")))
   )
-  private[this] lazy val controllers_UserController_list12_invoker = createInvoker(
-    UserController_5.list,
+  private[this] lazy val controllers_UserController_list1_invoker = createInvoker(
+    UserController_1.list,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.UserController",
       "list",
       Nil,
       "GET",
-      """""",
+      """ customer lee""",
       this.prefix + """users"""
     )
   )
 
-  // @LINE:27
-  private[this] lazy val controllers_UserController_add13_route = Route("GET",
+  // @LINE:10
+  private[this] lazy val controllers_UserController_add2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("users/add")))
   )
-  private[this] lazy val controllers_UserController_add13_invoker = createInvoker(
-    UserController_5.add,
+  private[this] lazy val controllers_UserController_add2_invoker = createInvoker(
+    UserController_1.add,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.UserController",
@@ -341,12 +127,12 @@ class Routes(
     )
   )
 
-  // @LINE:28
-  private[this] lazy val controllers_UserController_detail14_route = Route("GET",
+  // @LINE:11
+  private[this] lazy val controllers_UserController_detail3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("users/detail/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_UserController_detail14_invoker = createInvoker(
-    UserController_5.detail(fakeValue[Int]),
+  private[this] lazy val controllers_UserController_detail3_invoker = createInvoker(
+    UserController_1.detail(fakeValue[Int]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.UserController",
@@ -358,46 +144,29 @@ class Routes(
     )
   )
 
-  // @LINE:29
-  private[this] lazy val controllers_UserController_search15_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("users/search")))
-  )
-  private[this] lazy val controllers_UserController_search15_invoker = createInvoker(
-    UserController_5.search,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.UserController",
-      "search",
-      Nil,
-      "GET",
-      """""",
-      this.prefix + """users/search"""
-    )
-  )
-
-  // @LINE:30
-  private[this] lazy val controllers_UserController_edit16_route = Route("GET",
+  // @LINE:13
+  private[this] lazy val controllers_UserController_edit4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("users/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_UserController_edit16_invoker = createInvoker(
-    UserController_5.edit(fakeValue[Int]),
+  private[this] lazy val controllers_UserController_edit4_invoker = createInvoker(
+    UserController_1.edit(fakeValue[Int]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.UserController",
       "edit",
       Seq(classOf[Int]),
       "GET",
-      """""",
+      """GET           /users/search            controllers.UserController.search""",
       this.prefix + """users/""" + "$" + """id<[^/]+>"""
     )
   )
 
-  // @LINE:31
-  private[this] lazy val controllers_UserController_delete17_route = Route("GET",
+  // @LINE:14
+  private[this] lazy val controllers_UserController_delete5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("users/"), DynamicPart("id", """[^/]+""",true), StaticPart("/delete")))
   )
-  private[this] lazy val controllers_UserController_delete17_invoker = createInvoker(
-    UserController_5.delete(fakeValue[Int]),
+  private[this] lazy val controllers_UserController_delete5_invoker = createInvoker(
+    UserController_1.delete(fakeValue[Int]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.UserController",
@@ -409,12 +178,12 @@ class Routes(
     )
   )
 
-  // @LINE:36
-  private[this] lazy val controllers_Application_list18_route = Route("GET",
+  // @LINE:19
+  private[this] lazy val controllers_Application_list6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/users")))
   )
-  private[this] lazy val controllers_Application_list18_invoker = createInvoker(
-    Application_8.list,
+  private[this] lazy val controllers_Application_list6_invoker = createInvoker(
+    Application_4.list,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -426,12 +195,12 @@ class Routes(
     )
   )
 
-  // @LINE:37
-  private[this] lazy val controllers_Application_add19_route = Route("POST",
+  // @LINE:20
+  private[this] lazy val controllers_Application_add7_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/users")))
   )
-  private[this] lazy val controllers_Application_add19_invoker = createInvoker(
-    Application_8.add,
+  private[this] lazy val controllers_Application_add7_invoker = createInvoker(
+    Application_4.add,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -443,12 +212,12 @@ class Routes(
     )
   )
 
-  // @LINE:38
-  private[this] lazy val controllers_Application_detail20_route = Route("GET",
+  // @LINE:21
+  private[this] lazy val controllers_Application_detail8_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/users/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_detail20_invoker = createInvoker(
-    Application_8.detail(fakeValue[Int]),
+  private[this] lazy val controllers_Application_detail8_invoker = createInvoker(
+    Application_4.detail(fakeValue[Int]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -460,12 +229,12 @@ class Routes(
     )
   )
 
-  // @LINE:39
-  private[this] lazy val controllers_Application_search21_route = Route("POST",
+  // @LINE:22
+  private[this] lazy val controllers_Application_search9_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/users/search")))
   )
-  private[this] lazy val controllers_Application_search21_invoker = createInvoker(
-    Application_8.search,
+  private[this] lazy val controllers_Application_search9_invoker = createInvoker(
+    Application_4.search,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -477,12 +246,12 @@ class Routes(
     )
   )
 
-  // @LINE:40
-  private[this] lazy val controllers_Application_edit22_route = Route("POST",
+  // @LINE:23
+  private[this] lazy val controllers_Application_edit10_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/users/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_edit22_invoker = createInvoker(
-    Application_8.edit(fakeValue[Int]),
+  private[this] lazy val controllers_Application_edit10_invoker = createInvoker(
+    Application_4.edit(fakeValue[Int]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -494,12 +263,12 @@ class Routes(
     )
   )
 
-  // @LINE:41
-  private[this] lazy val controllers_Application_delete23_route = Route("DELETE",
+  // @LINE:24
+  private[this] lazy val controllers_Application_delete11_route = Route("DELETE",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/users/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_delete23_invoker = createInvoker(
-    Application_8.delete(fakeValue[Int]),
+  private[this] lazy val controllers_Application_delete11_invoker = createInvoker(
+    Application_4.delete(fakeValue[Int]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -511,12 +280,29 @@ class Routes(
     )
   )
 
-  // @LINE:43
-  private[this] lazy val controllers_DBController_user24_route = Route("GET",
+  // @LINE:25
+  private[this] lazy val controllers_Application_export12_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/export")))
+  )
+  private[this] lazy val controllers_Application_export12_invoker = createInvoker(
+    Application_4.export,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "export",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """api/export"""
+    )
+  )
+
+  // @LINE:28
+  private[this] lazy val controllers_DBController_user13_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/db")))
   )
-  private[this] lazy val controllers_DBController_user24_invoker = createInvoker(
-    DBController_6.user,
+  private[this] lazy val controllers_DBController_user13_invoker = createInvoker(
+    DBController_2.user,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.DBController",
@@ -528,12 +314,12 @@ class Routes(
     )
   )
 
-  // @LINE:46
-  private[this] lazy val controllers_Assets_versioned25_route = Route("GET",
+  // @LINE:31
+  private[this] lazy val controllers_Assets_versioned14_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned25_invoker = createInvoker(
-    Assets_7.versioned(fakeValue[String], fakeValue[Asset]),
+  private[this] lazy val controllers_Assets_versioned14_invoker = createInvoker(
+    Assets_3.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -551,157 +337,91 @@ class Routes(
     // @LINE:6
     case controllers_HomeController_index0_route(params) =>
       call { 
-        controllers_HomeController_index0_invoker.call(HomeController_1.index)
+        controllers_HomeController_index0_invoker.call(HomeController_0.index)
       }
   
-    // @LINE:8
-    case controllers_CountController_count1_route(params) =>
+    // @LINE:9
+    case controllers_UserController_list1_route(params) =>
       call { 
-        controllers_CountController_count1_invoker.call(CountController_0.count)
+        controllers_UserController_list1_invoker.call(UserController_1.list)
       }
   
     // @LINE:10
-    case controllers_AsyncController_message2_route(params) =>
+    case controllers_UserController_add2_route(params) =>
       call { 
-        controllers_AsyncController_message2_invoker.call(AsyncController_3.message)
+        controllers_UserController_add2_invoker.call(UserController_1.add)
       }
   
-    // @LINE:12
-    case controllers_Authentication_login3_route(params) =>
-      call(params.fromQuery[String]("returnTo", None)) { (returnTo) =>
-        controllers_Authentication_login3_invoker.call(Authentication_4.login(returnTo))
+    // @LINE:11
+    case controllers_UserController_detail3_route(params) =>
+      call(params.fromPath[Int]("id", None)) { (id) =>
+        controllers_UserController_detail3_invoker.call(UserController_1.detail(id))
       }
   
     // @LINE:13
-    case controllers_Authentication_authenticate4_route(params) =>
-      call(params.fromQuery[String]("returnTo", None)) { (returnTo) =>
-        controllers_Authentication_authenticate4_invoker.call(Authentication_4.authenticate(returnTo))
+    case controllers_UserController_edit4_route(params) =>
+      call(params.fromPath[Int]("id", None)) { (id) =>
+        controllers_UserController_edit4_invoker.call(UserController_1.edit(id))
       }
   
     // @LINE:14
-    case controllers_Authentication_logout5_route(params) =>
-      call { 
-        controllers_Authentication_logout5_invoker.call(Authentication_4.logout)
-      }
-  
-    // @LINE:17
-    case controllers_ItemsController_list6_route(params) =>
-      call { 
-        controllers_ItemsController_list6_invoker.call(ItemsController_2.list)
-      }
-  
-    // @LINE:18
-    case controllers_ItemsController_create7_route(params) =>
-      call { 
-        controllers_ItemsController_create7_invoker.call(ItemsController_2.create)
+    case controllers_UserController_delete5_route(params) =>
+      call(params.fromPath[Int]("id", None)) { (id) =>
+        controllers_UserController_delete5_invoker.call(UserController_1.delete(id))
       }
   
     // @LINE:19
-    case controllers_ItemsController_createForm8_route(params) =>
+    case controllers_Application_list6_route(params) =>
       call { 
-        controllers_ItemsController_createForm8_invoker.call(ItemsController_2.createForm)
+        controllers_Application_list6_invoker.call(Application_4.list)
       }
   
     // @LINE:20
-    case controllers_ItemsController_details9_route(params) =>
-      call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_ItemsController_details9_invoker.call(ItemsController_2.details(id))
+    case controllers_Application_add7_route(params) =>
+      call { 
+        controllers_Application_add7_invoker.call(Application_4.add)
       }
   
     // @LINE:21
-    case controllers_ItemsController_update10_route(params) =>
-      call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_ItemsController_update10_invoker.call(ItemsController_2.update(id))
+    case controllers_Application_detail8_route(params) =>
+      call(params.fromPath[Int]("id", None)) { (id) =>
+        controllers_Application_detail8_invoker.call(Application_4.detail(id))
       }
   
     // @LINE:22
-    case controllers_ItemsController_delete11_route(params) =>
-      call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_ItemsController_delete11_invoker.call(ItemsController_2.delete(id))
+    case controllers_Application_search9_route(params) =>
+      call { 
+        controllers_Application_search9_invoker.call(Application_4.search)
       }
   
-    // @LINE:26
-    case controllers_UserController_list12_route(params) =>
-      call { 
-        controllers_UserController_list12_invoker.call(UserController_5.list)
+    // @LINE:23
+    case controllers_Application_edit10_route(params) =>
+      call(params.fromPath[Int]("id", None)) { (id) =>
+        controllers_Application_edit10_invoker.call(Application_4.edit(id))
       }
   
-    // @LINE:27
-    case controllers_UserController_add13_route(params) =>
+    // @LINE:24
+    case controllers_Application_delete11_route(params) =>
+      call(params.fromPath[Int]("id", None)) { (id) =>
+        controllers_Application_delete11_invoker.call(Application_4.delete(id))
+      }
+  
+    // @LINE:25
+    case controllers_Application_export12_route(params) =>
       call { 
-        controllers_UserController_add13_invoker.call(UserController_5.add)
+        controllers_Application_export12_invoker.call(Application_4.export)
       }
   
     // @LINE:28
-    case controllers_UserController_detail14_route(params) =>
-      call(params.fromPath[Int]("id", None)) { (id) =>
-        controllers_UserController_detail14_invoker.call(UserController_5.detail(id))
-      }
-  
-    // @LINE:29
-    case controllers_UserController_search15_route(params) =>
+    case controllers_DBController_user13_route(params) =>
       call { 
-        controllers_UserController_search15_invoker.call(UserController_5.search)
-      }
-  
-    // @LINE:30
-    case controllers_UserController_edit16_route(params) =>
-      call(params.fromPath[Int]("id", None)) { (id) =>
-        controllers_UserController_edit16_invoker.call(UserController_5.edit(id))
+        controllers_DBController_user13_invoker.call(DBController_2.user)
       }
   
     // @LINE:31
-    case controllers_UserController_delete17_route(params) =>
-      call(params.fromPath[Int]("id", None)) { (id) =>
-        controllers_UserController_delete17_invoker.call(UserController_5.delete(id))
-      }
-  
-    // @LINE:36
-    case controllers_Application_list18_route(params) =>
-      call { 
-        controllers_Application_list18_invoker.call(Application_8.list)
-      }
-  
-    // @LINE:37
-    case controllers_Application_add19_route(params) =>
-      call { 
-        controllers_Application_add19_invoker.call(Application_8.add)
-      }
-  
-    // @LINE:38
-    case controllers_Application_detail20_route(params) =>
-      call(params.fromPath[Int]("id", None)) { (id) =>
-        controllers_Application_detail20_invoker.call(Application_8.detail(id))
-      }
-  
-    // @LINE:39
-    case controllers_Application_search21_route(params) =>
-      call { 
-        controllers_Application_search21_invoker.call(Application_8.search)
-      }
-  
-    // @LINE:40
-    case controllers_Application_edit22_route(params) =>
-      call(params.fromPath[Int]("id", None)) { (id) =>
-        controllers_Application_edit22_invoker.call(Application_8.edit(id))
-      }
-  
-    // @LINE:41
-    case controllers_Application_delete23_route(params) =>
-      call(params.fromPath[Int]("id", None)) { (id) =>
-        controllers_Application_delete23_invoker.call(Application_8.delete(id))
-      }
-  
-    // @LINE:43
-    case controllers_DBController_user24_route(params) =>
-      call { 
-        controllers_DBController_user24_invoker.call(DBController_6.user)
-      }
-  
-    // @LINE:46
-    case controllers_Assets_versioned25_route(params) =>
+    case controllers_Assets_versioned14_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned25_invoker.call(Assets_7.versioned(path, file))
+        controllers_Assets_versioned14_invoker.call(Assets_3.versioned(path, file))
       }
   }
 }

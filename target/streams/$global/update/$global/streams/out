@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for my-first-app#my-first-app_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies my-first-app#my-first-app_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8756452[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@273a5fe[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.7] org.scala-lang#scala-library;2.11.7[0m
@@ -8106,7 +8106,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.7!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4246ms :: artifacts dl 128ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3655ms :: artifacts dl 72ms[0m
 [0m[[0mdebug[0m] [0m	report for my-first-app#my-first-app_2.11;1.0-SNAPSHOT compile produced in /Users/beace/Documents/playframework/my-first-app/target/resolution-cache/reports/my-first-app-my-first-app_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for my-first-app#my-first-app_2.11;1.0-SNAPSHOT runtime produced in /Users/beace/Documents/playframework/my-first-app/target/resolution-cache/reports/my-first-app-my-first-app_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for my-first-app#my-first-app_2.11;1.0-SNAPSHOT test produced in /Users/beace/Documents/playframework/my-first-app/target/resolution-cache/reports/my-first-app-my-first-app_2.11-test.xml[0m
@@ -8120,5 +8120,5 @@
 [0m[[0mdebug[0m] [0m	report for my-first-app#my-first-app_2.11;1.0-SNAPSHOT docs produced in /Users/beace/Documents/playframework/my-first-app/target/resolution-cache/reports/my-first-app-my-first-app_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for my-first-app#my-first-app_2.11;1.0-SNAPSHOT pom produced in /Users/beace/Documents/playframework/my-first-app/target/resolution-cache/reports/my-first-app-my-first-app_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for my-first-app#my-first-app_2.11;1.0-SNAPSHOT scala-tool produced in /Users/beace/Documents/playframework/my-first-app/target/resolution-cache/reports/my-first-app-my-first-app_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (4246ms resolve - 128ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (3655ms resolve - 72ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

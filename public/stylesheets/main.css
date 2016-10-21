@@ -7,3 +7,7 @@
 .h1{
     font-family: cursive;
 }
+.keyword{
+    font-weight:bold;
+    color: steelblue;
+}

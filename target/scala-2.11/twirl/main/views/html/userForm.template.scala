@@ -29,12 +29,13 @@ Seq[Any](format.raw/*1.19*/("""
         <meta charset="UTF-8">
         <title>"""),_display_(/*6.17*/message),format.raw/*6.24*/("""</title>
         <link rel="stylesheet" href=""""),_display_(/*7.39*/routes/*7.45*/.Assets.versioned("stylesheets/bootstrap.min.css")),format.raw/*7.95*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*8.39*/routes/*8.45*/.Assets.versioned("stylesheets/main.css")),format.raw/*8.86*/("""">
     </head>
     <body>
         <div class="container">
-            <h1>"""),_display_(/*11.18*/message),format.raw/*11.25*/("""</h1>
+            <h1 class="h1">"""),_display_(/*12.29*/message),format.raw/*12.36*/("""</h1>
             <hr/>
-            <form role="form" action=""""),_display_(/*13.40*/routes/*13.46*/.Application.add()),format.raw/*13.64*/("""" method="post">
+            <form role="form" action=""""),_display_(/*14.40*/routes/*14.46*/.Application.add()),format.raw/*14.64*/("""" method="post">
                 <div class="form-group">
                     <label>User name</label>
                     <input type="text" class="form-control" name="username" placeholder="username">
@@ -72,11 +73,11 @@ Seq[Any](format.raw/*1.19*/("""
 object userForm extends userForm_Scope0.userForm
               /*
                   -- GENERATED --
-                  DATE: Mon Oct 17 17:29:32 CST 2016
+                  DATE: Tue Oct 18 15:29:04 CST 2016
                   SOURCE: /Users/beace/Documents/playframework/my-first-app/app/views/userForm.scala.html
-                  HASH: 3737df26c52ccaf5b6955fa238c2ee330c9560c2
-                  MATRIX: 533->1|645->18|672->19|789->110|816->117|889->164|903->170|973->220|1075->295|1103->302|1193->365|1208->371|1247->389
-                  LINES: 20->1|25->1|26->2|30->6|30->6|31->7|31->7|31->7|35->11|35->11|37->13|37->13|37->13
+                  HASH: c884878e1e3b91b404e8bbbcd0a3c144f44e6c1a
+                  MATRIX: 533->1|645->18|672->19|789->110|816->117|889->164|903->170|973->220|1040->261|1054->267|1115->308|1228->394|1256->401|1346->464|1361->470|1400->488
+                  LINES: 20->1|25->1|26->2|30->6|30->6|31->7|31->7|31->7|32->8|32->8|32->8|36->12|36->12|38->14|38->14|38->14
                   -- GENERATED --
               */
           

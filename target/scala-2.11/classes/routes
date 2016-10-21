@@ -4,33 +4,16 @@
 
 # An example controller showing a sample home page
 GET           /                        controllers.HomeController.index
-# An example controller showing how to use dependency injection
-GET           /count                   controllers.CountController.count
-# An example controller showing how to write asynchronous code
-GET           /message                 controllers.AsyncController.message
 
-GET           /login                   controllers.Authentication.login(returnTo)
-POST          /authenticate            controllers.Authentication.authenticate(returnTo)
-GET           /logout                  controllers.Authentication.logout
-
-
-GET           /items                   controllers.ItemsController.list
-POST          /items                   controllers.ItemsController.create
-GET           /items/add               controllers.ItemsController.createForm
-GET           /items/:id               controllers.ItemsController.details(id: Long)
-PUT           /items/:id               controllers.ItemsController.update(id: Long)
-DELETE        /items/:id               controllers.ItemsController.delete(id: Long)
-
-
-
+# customer lee
 GET           /users                   controllers.UserController.list
 GET           /users/add               controllers.UserController.add
 GET           /users/detail/:id        controllers.UserController.detail(id: Int)
-GET           /users/search            controllers.UserController.search
+#GET           /users/search            controllers.UserController.search
 GET           /users/:id               controllers.UserController.edit(id: Int)
 GET           /users/:id/delete        controllers.UserController.delete(id: Int)
 
-# customer lee
+
 #GET           /application                       controllers.Application.list
 
 GET           /api/users               controllers.Application.list
@@ -39,6 +22,8 @@ GET           /api/users/:id           controllers.Application.detail(id:Int)
 POST          /api/users/search        controllers.Application.search
 POST          /api/users/:id           controllers.Application.edit(id:Int)
 DELETE        /api/users/:id           controllers.Application.delete(id:Int)
+GET           /api/export              controllers.Application.export
+
 
 GET           /api/db                  controllers.DBController.user
 

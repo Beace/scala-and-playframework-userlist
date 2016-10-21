@@ -27,7 +27,7 @@ class UserController @Inject()(ws: WSClient) extends Controller {
   }
 
   def add = Action {
-    Ok(views.html.userForm("userform"))
+    Ok(views.html.userForm("User Add"))
   }
 
   def detail(id: Int) = Action.async {
@@ -40,17 +40,17 @@ class UserController @Inject()(ws: WSClient) extends Controller {
     }
   }
 
-  def search = Action.async {
-    val url = s"http://localhost:9001/api/users/search"
-    ws.url(url).get().map {
-      response =>
-        println(response.body)
-        val json = Json.parse(response.body)
-        val jsonSeq = json.as[Seq[Userinfo]]
-        println(jsonSeq)
-        Ok(views.html.search("user search",jsonSeq))
-    }
-  }
+//  def search = Action.async {
+//    val url = s"http://localhost:9001/api/users/search"
+//    ws.url(url).get().map {
+//      response =>
+//        println(response.body)
+//        val json = Json.parse(response.body)
+//        val jsonSeq = json.as[Seq[Userinfo]]
+//        println(jsonSeq)
+//        Ok(views.html.search("user search",jsonSeq))
+//    }
+//  }
 
   implicit val userWrites = Writes[Userinfo] {
     case Userinfo(id: Int, username: String, description: String, password: String) =>

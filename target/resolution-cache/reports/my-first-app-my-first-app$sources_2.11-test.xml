@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20161014173548"/>
+		date="20161021155049"/>
 	<dependencies>
 		<module organisation="org.seleniumhq.selenium" name="selenium-leg-rc">
 			<revision name="2.48.2" status="release" pubdate="20151010041141" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="114">
@@ -609,7 +609,7 @@
 				<metadata-artifact status="no" details="" size="21645" time="0" location="/Users/beace/.ivy2/cache/org.hibernate/hibernate-validator/ivy-5.2.4.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.pom"/>
 				<caller organisation="my-first-app" name="my-first-app$sources_2.11" conf="test, compile, runtime" rev="5.2.4.Final" rev-constraint-default="5.2.4.Final" rev-constraint-dynamic="5.2.4.Final" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="hibernate-validator" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="516544" time="7499" location="/Users/beace/.ivy2/cache/org.hibernate/hibernate-validator/srcs/hibernate-validator-5.2.4.Final-sources.jar">
+					<artifact name="hibernate-validator" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="516544" time="0" location="/Users/beace/.ivy2/cache/org.hibernate/hibernate-validator/srcs/hibernate-validator-5.2.4.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -657,7 +657,7 @@
 				<metadata-artifact status="no" details="" size="3700" time="0" location="/Users/beace/.ivy2/cache/org.yaml/snakeyaml/ivy-1.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.16/snakeyaml-1.16.pom"/>
 				<caller organisation="my-first-app" name="my-first-app$sources_2.11" conf="test, compile, runtime" rev="1.16" rev-constraint-default="1.16" rev-constraint-dynamic="1.16" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="snakeyaml" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="169194" time="2783" location="/Users/beace/.ivy2/cache/org.yaml/snakeyaml/srcs/snakeyaml-1.16-sources.jar">
+					<artifact name="snakeyaml" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="169194" time="0" location="/Users/beace/.ivy2/cache/org.yaml/snakeyaml/srcs/snakeyaml-1.16-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.16/snakeyaml-1.16-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -926,7 +926,7 @@
 				<metadata-artifact status="no" details="" size="3198" time="0" location="/Users/beace/.ivy2/cache/org.springframework/spring-core/ivy-4.2.7.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-core/4.2.7.RELEASE/spring-core-4.2.7.RELEASE.pom"/>
 				<caller organisation="my-first-app" name="my-first-app$sources_2.11" conf="test, compile, runtime" rev="4.2.7.RELEASE" rev-constraint-default="4.2.7.RELEASE" rev-constraint-dynamic="4.2.7.RELEASE" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="spring-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="711218" time="7010" location="/Users/beace/.ivy2/cache/org.springframework/spring-core/srcs/spring-core-4.2.7.RELEASE-sources.jar">
+					<artifact name="spring-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="711218" time="0" location="/Users/beace/.ivy2/cache/org.springframework/spring-core/srcs/spring-core-4.2.7.RELEASE-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-core/4.2.7.RELEASE/spring-core-4.2.7.RELEASE-sources.jar"/>
 					</artifact>
 				</artifacts>

@@ -1,13 +1,15 @@
-@(messages: String, users: Seq[Userinfo])
+@import scala.util.matching.Regex
+@(messages: String, users: Seq[Userinfo],keyword:Any)
 @layout("Users Query") {
 
-  <div>
+  <div class="clearfix">
     <form action="@routes.Application.search()" method="POST">
       <input type="search" class="form-control pull-left search padding" name="username" placeholder="查询">
     </form>
     <a href="@routes.UserController.add()" class="btn btn-primary pull-left padding">添加</a>
     <a href="@routes.UserController.list()" class="btn btn-info pull-left padding">Back</a>
   </div>
+  <p>关键词<span class="keyword"> @keyword </span>的查询结果</p>
   <table id="table" class="table table-bordered table-hover table-striped container">
     <tr class="info">
       <th>#</th>
@@ -20,8 +22,16 @@
     @for(user <- users) {
       <tr>
         <td>@user.id</td>
-        <td>@user.username</td>
-        <td>@user.description</td>
+        @if(user.username.indexOf(keyword) < 0) {
+            <td>@Html(user.username.replaceAll(keyword.toString,"<span class='keyword'>"+keyword+"</span>"))</td>
+        } else {
+            <td>@user.username</td>
+        }
+        @if(user.description.indexOf(keyword) < 0) {
+            <td>@Html(user.description.replaceAll(keyword.toString,"<span class='keyword'>"+keyword+"</span>"))</td>
+        } else {
+            <td>@user.description</td>
+        }
         <td>@user.password</td>
         <td><a href="@routes.UserController.detail(user.id)">详情</a>
           <span style="margin: 0 10px;">|</span>

@@ -4,7 +4,7 @@
 		module="my-first-app$sources_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20161014173548"
+		publication="20161021155049"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

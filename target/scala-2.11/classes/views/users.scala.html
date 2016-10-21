@@ -2,7 +2,7 @@
 @layout("Users List") {
 
     <div>
-        <form action="@routes.Application.search()" method="GET">
+        <form action="@routes.Application.search()" method="POST">
             <input type="search" class="form-control pull-left search padding" name="username" placeholder="查询">
         </form>
         <a href="/users/add" class="btn btn-primary pull-left padding">添加</a>

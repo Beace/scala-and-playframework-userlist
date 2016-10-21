@@ -5,10 +5,11 @@
         <meta charset="UTF-8">
         <title>@message</title>
         <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")">
+        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/main.css")">
     </head>
     <body>
         <div class="container">
-            <h1>@message</h1>
+            <h1 class="h1">@message</h1>
             <hr/>
             <form role="form" action="@routes.Application.add()" method="post">
                 <div class="form-group">

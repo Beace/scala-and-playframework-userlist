@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/beace/Documents/playframework/my-first-app/conf/routes
-// @DATE:Tue Oct 18 11:21:12 CST 2016
+// @DATE:Fri Oct 21 16:25:33 CST 2016
 
 
 package router {

@@ -1,11 +1,12 @@
 @(messages: String, users: Seq[Userinfo])
-@layout("Users List") {
+@layout("Users Query") {
 
   <div>
-    <form action="@routes.Application.search()" method="GET">
+    <form action="@routes.Application.search()" method="POST">
       <input type="search" class="form-control pull-left search padding" name="username" placeholder="查询">
     </form>
-    <a href="/users/add" class="btn btn-primary pull-left padding">添加</a>
+    <a href="@routes.UserController.add()" class="btn btn-primary pull-left padding">添加</a>
+    <a href="@routes.UserController.list()" class="btn btn-info pull-left padding">Back</a>
   </div>
   <table id="table" class="table table-bordered table-hover table-striped container">
     <tr class="info">

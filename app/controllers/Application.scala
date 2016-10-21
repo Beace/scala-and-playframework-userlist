@@ -1,9 +1,11 @@
 package controllers
 
+import java.io.File
 import javax.inject.Inject
 
 import anorm._
 import models.Userinfo
+import play.api.Play
 import play.api.data.Form
 import play.api.data.Forms._
 import play.api.db.Database
@@ -13,8 +15,6 @@ import play.api.mvc.{Action, Controller}
 /**
   * Created by beace on 16/10/12.
   */
-case class SearchData(username: String)
-
 class Application @Inject()(db: Database) extends Controller {
   /*
   * return json
@@ -103,18 +103,15 @@ class Application @Inject()(db: Database) extends Controller {
 
   def search = Action { implicit request =>
     val body = request.body
-    println(body)
     val jsonBody: Option[JsValue] = body.asJson
-    println(jsonBody)
     val name: Option[String] = request.body.asFormUrlEncoded.flatMap(m => m.get("username").flatMap(_.headOption))
     val username = name.getOrElse(0)
-    println(name.getOrElse(0))
     db.withConnection { implicit c =>
       val parser: RowParser[Userinfo] = Macro.namedParser[Userinfo]
-      val result = SQL(s"SELECT * FROM test WHERE username LIKE '%$username%'").as(parser.*)
+      val result = SQL(s"SELECT * FROM test WHERE username LIKE '%$username%' OR description LIKE '%$username%'").as(parser.*)
       val json = Json.toJson(result)
       val jsonSeq = json.as[Seq[Userinfo]]
-      Ok(views.html.search("User query",jsonSeq))
+      Ok(views.html.search("User query",jsonSeq,username))
     }
   }
 
@@ -140,6 +137,16 @@ class Application @Inject()(db: Database) extends Controller {
       ))
     }
     Redirect("/users")
+  }
+
+  def export = Action {
+    Ok.sendFile(
+      content = new java.io.File("tmp/thinkjs.pdf"),
+      fileName = _ => "thinkjs.pdf",
+      inline = false
+    )
+
+//    Redirect("/users")
   }
 
 }
