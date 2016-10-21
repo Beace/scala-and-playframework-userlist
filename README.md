@@ -15,22 +15,22 @@ localhost:9000/users
 Look like this:
 
 ### User Add
-![user add](http://img.beacelee.com/static/useradd.png@!2)
+![user add](http://images-manager.oss-cn-shanghai.aliyuncs.com/static/useradd.png)
 
 ### User List
-![user list](http://img.beacelee.com/static/userlist.png@!2)
+![user list](http://images-manager.oss-cn-shanghai.aliyuncs.com/static/userlist.png)
 
 ### User Query
 
-![user query](http://img.beacelee.com/static/userquery.png@!2)
+![user query](http://images-manager.oss-cn-shanghai.aliyuncs.com/static/userquery.png)
 
 ### User Edit
 
-![user edit](http://img.beacelee.com/static/useredit.png@!2)
+![user edit](http://images-manager.oss-cn-shanghai.aliyuncs.com/static/useredit.png)
 
 ### User Detail
 
-![user detail](http://img.beacelee.com/static/userdetail.png@!2)
+![user detail](http://images-manager.oss-cn-shanghai.aliyuncs.com/static/userdetail.png)
 
 
 Controllers
