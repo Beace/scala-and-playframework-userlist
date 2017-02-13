@@ -58,8 +58,8 @@ Seq[Any](format.raw/*1.32*/("""
 object layout extends layout_Scope0.layout
               /*
                   -- GENERATED --
-                  DATE: Mon Oct 17 17:26:33 CST 2016
-                  SOURCE: /Users/beace/Documents/playframework/my-first-app/app/views/layout.scala.html
+                  DATE: Mon Dec 19 19:37:42 CST 2016
+                  SOURCE: /Users/beace/Documents/playframework/github/my/scala-and-playframework-userlist/app/views/layout.scala.html
                   HASH: fe6ee6a0d249cbe73c2f83c9016359cfee52139a
                   MATRIX: 534->1|659->31|686->32|825->145|839->151|909->201|976->242|990->248|1051->289|1096->308|1121->313|1250->415|1276->420|1340->457|1368->464|1404->473
                   LINES: 20->1|25->1|26->2|30->6|30->6|30->6|31->7|31->7|31->7|32->8|32->8|36->12|36->12|38->14|38->14|39->15

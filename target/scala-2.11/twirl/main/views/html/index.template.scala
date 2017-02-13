@@ -57,8 +57,8 @@ Seq[Any](format.raw/*5.19*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Tue Oct 11 11:20:51 CST 2016
-                  SOURCE: /Users/beace/Documents/playframework/my-first-app/app/views/index.scala.html
+                  DATE: Mon Dec 19 19:37:41 CST 2016
+                  SOURCE: /Users/beace/Documents/playframework/github/my/scala-and-playframework-userlist/app/views/index.scala.html
                   HASH: a81f108240070e68924090e3fa0e4a45e1b4ba99
                   MATRIX: 616->95|728->112|757->308|785->310|817->333|857->335|890->464|922->470|937->476|992->510|1025->513
                   LINES: 23->5|28->5|30->11|31->12|31->12|31->12|33->17|34->18|34->18|34->18|36->20

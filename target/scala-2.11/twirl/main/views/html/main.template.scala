@@ -68,8 +68,8 @@ Seq[Any](format.raw/*7.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Tue Oct 11 11:20:51 CST 2016
-                  SOURCE: /Users/beace/Documents/playframework/my-first-app/app/views/main.scala.html
+                  DATE: Mon Dec 19 19:37:42 CST 2016
+                  SOURCE: /Users/beace/Documents/playframework/github/my/scala-and-playframework-userlist/app/views/main.scala.html
                   HASH: b3310cc09ef09add3f7262f9b2cc640f61a6e3c3
                   MATRIX: 784->260|909->290|937->292|1017->397|1053->406|1088->414|1114->419|1203->481|1218->487|1281->528|1369->589|1384->595|1445->634|1497->659|1512->665|1574->706|1668->862|1705->872|1733->879|1765->884
                   LINES: 25->7|30->7|32->9|35->12|36->13|36->13|36->13|37->14|37->14|37->14|38->15|38->15|38->15|39->16|39->16|39->16|42->20|43->21|43->21|44->22

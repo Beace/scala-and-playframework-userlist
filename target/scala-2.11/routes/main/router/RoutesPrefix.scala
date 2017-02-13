@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/beace/Documents/playframework/my-first-app/conf/routes
-// @DATE:Fri Oct 21 16:25:33 CST 2016
+// @SOURCE:/Users/beace/Documents/playframework/github/my/scala-and-playframework-userlist/conf/routes
+// @DATE:Mon Dec 19 19:37:40 CST 2016
 
 
 package router {
